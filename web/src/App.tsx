@@ -19,6 +19,7 @@ interface Game {
 
 function App() {
   const [games, setGames] = useState<Game[]>([])
+  console.log(games)
 
   useEffect(() => {
     api.get('http://localhost:3333/games')
